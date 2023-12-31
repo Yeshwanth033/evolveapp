@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Game Board -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="20dp">
+    </GridLayout>
+
+    <!-- Current Player Text -->
+    <TextView
+        android:id="@+id/currentPlayerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Current Player: X"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentPlayerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Reset Game"/>
+</RelativeLayout>
